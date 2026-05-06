@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.welcome {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 75vh;
+    gap: 20px;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#editor,
+#preview {
+    flex: 1;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    overflow-y: auto;
+
+    background: #020617;
+    color: #e2e8f0;
+
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.7);
+    transition: all 0.2s ease;
+}
+
+#editor {
+    resize: none;
+    font-family: monospace;
+}
+
+#editor:focus,
+#preview:hover {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    transform: scale(1.01);
+}
+
+#editor::-webkit-scrollbar,
+#preview::-webkit-scrollbar {
+    width: 8px;
+}
+
+#editor::-webkit-scrollbar-thumb,
+#preview::-webkit-scrollbar-thumb {
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+#preview {
+    line-height: 1.6;
+}
+
+#preview h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #38bdf8;
+    margin-bottom: 10px;
+}
+
+#preview h2 {
+    font-size: 1.6rem;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 8px;
+}
+
+#preview h3 {
+    font-size: 1.3rem;
+}
+
+#preview strong {
+    color: #facc15;
+}
+
+#preview em {
+    color: #a78bfa;
+}
+
+#preview a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+#preview a:hover {
+    text-decoration: underline;
+}
+
+#preview ul {
+    padding-left: 20px;
+}
+
+#preview li {
+    margin-bottom: 5px;
+}
+
+#preview pre {
+    padding: 16px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+#preview pre code {
+    background: none;
+    padding: 0;
+}
+
+#preview blockquote {
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+    color: #94a3b8;
+    margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #editor,
+    #preview {
+        height: 300px;
+    }
+}
+
+#preview.markdown-body {
+    background: #0d1117;
+    color: #c9d1d9;
+    padding: 20px;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+#preview.markdown-body h1,
+#preview.markdown-body h2 {
+    border-color: #30363d;
+}
+
+#preview.markdown-body pre {
+    background-color: #161b22;
+}
+
+#preview.markdown-body code {
+    background-color: rgba(110,118,129,0.4);
+}
+
+#preview.markdown-body a {
+    color: #58a6ff;
+}
+
+#preview.markdown-body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.style-button {
+    width: 150px;
+    height: 45px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: none;
+
+    background: #238636;
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.style-button:hover {
+    background: #2ea043;
+    transform: scale(1.05);
+}
+
+.button-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    background: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #30363d;
+
+    color: #c9d1d9;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.socials a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.socials a:hover {
+    color: #79c0ff;
+    text-decoration: underline;
+}

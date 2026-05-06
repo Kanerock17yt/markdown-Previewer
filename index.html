@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Previewer</title>
+    <!-- Marked.js library via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="welcome">Welcome to markdown file previewer!</p>
+    <div class="container">
+        <textarea id="editor" placeholder="Type your markdown here..."></textarea>
+        <div id="preview" class="markdown-body"></div>
+
+        <div class="button-row">
+            <button onclick="downloadMarkdown()" class="style-button">Download .md</button>
+            <button onclick="downloadHTML()" class="style-button">Download .html</button>
+            <button onclick="clearEditor()" class="style-button">Clear</button>
+        </div>
+    </div>
+
+    <footer class="bottom-bar">
+        <span>Markdown Viewer • Kane_rock17yt</span>
+
+        <div class="socials">
+            <a href="https://youtube.com/@Kane_rock17yt" target="_blank">YouTube</a>
+            <a href="https://github.com/Kanerock17yt" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
