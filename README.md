@@ -32,4 +32,4 @@ The use for this website/project is to edit and preview markdown files.
 ### Thanks:
 Thanks for using this website if you used it!
 This took me days and days, if you use this site, I really thank you
-<br> Please subscribe to <a href="https://www.youtube.com/@Kane_rock17yt" style="color: red; text-decoration: underline; font-weight: bold;">my channel</a> if you want to see more projects like this!
+<br> Please subscribe to <a href="https://www.youtube.com/@Kane_rock17yt">my channel</a> if you want to see more projects like this!
