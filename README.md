@@ -26,10 +26,10 @@ The use for this website/project is to edit and preview markdown files.
 
 #### Download the repo using [git](https://git-scm.com) (for developers)
 - **Click** the windows key (if you are on windows)
-- **Open** cmd and type in ```git --version```
+- **Open** command prompt and type in ```git --version```
 ↳ if there is a **error**, you don't have git then
 - **Type** in ```git clone https://github.com/Kanerock17yt/markdown-Previewer MDPreviewerClone``` if there is no error for the last step
 ### Thanks:
 Thanks for using this website if you used it!
 This took me days and days, if you use this site, I really thank you
-<br> Please subscribe to <a href="https://www.youtube.com/@Kane_rock17yt">my channel</a> if you want to see more projects like this!
+<br> Please subscribe to [my channel](https://www.youtube.com/@Kane_rock17yt) if you want to see more projects like this!
